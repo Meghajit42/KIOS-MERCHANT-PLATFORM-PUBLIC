@@ -11,3 +11,7 @@ The compatibility-named GopalMenuV1 and DemoCatalog classes now generate synthet
 Synthetic fixtures and included image fallback are tested separately. This export is not a new full-suite qualification of private restaurant behavior. No release archive, screenshot or historical Git object accompanies it. No license is added. Deployment and publication remain separate; no automatic Hostinger connection exists.
 
 Public-facing legacy shop labels and omitted brand-image references are replaced by generic synthetic labels and the included placeholder. This adaptation is limited to the separate public export. Existing security, tenant, checkout, payment and migration logic is preserved; there is no deployment.
+
+## M07E publication
+
+Based on the existing sanitized M07D public tree and history, with exact qualified partner services, migration 038, partner tests, five delivery contracts and contract checker added. The public synthetic catalogue generation is preserved byte-for-byte. No historical private commits, source archive, runtime records or internal reports are imported. `.env.example` remains placeholders/default-off; the sanitized seed migration expectation advances to 038. No new license, dependency, photograph or third-party asset is included. Targeted public fixture/contract/syntax validation does not replace full private operational regression.

@@ -1,12 +1,12 @@
 {
-  "baseline": "M07D",
-  "export": "SANITIZED PUBLIC SOURCE \u2014 TARGETED QUALIFICATION ONLY",
-  "qualifiedPrivateManifestSha256": "b7493fbdbca3a0080660ed26c569d44178909ad27429804c987beb20f0d27383",
+  "baseline": "M07E",
+  "export": "SANITIZED PUBLIC SOURCE - TARGETED QUALIFICATION ONLY",
+  "qualifiedPrivateManifestSha256": "67017c2cb281955322d47d12dcbe88daf736adbbcbca26ff097803dc565d301a",
   "files": [
     {
       "path": ".env.example",
-      "sha256": "2c6e8420dfb09a06f1740a4c1fe1521204ece36eca61815710b227a3bc10eec9",
-      "qualifiedPrivateSha256": "ce995c8c88a2e3fc3e7e7f6f7048ba4b7d362e7dd6ac3c1fb84eef71c9b978c7"
+      "sha256": "3d3f80afef87f707061865f5b353a7741874d48dc7c4ce474450d04fc5817e65",
+      "qualifiedPrivateSha256": "0dac5fc5aaaf3d6a9f8c3aebf438a8560a4e083bbb0c7e863a89aae5cdd75e6e"
     },
     {
       "path": ".gitattributes",
@@ -137,6 +137,21 @@
       "path": "app/CustomerOrders/OrderIntents.php",
       "sha256": "ebaece8839c8a8ede27b6afe11f5e7badca155971588bcb99b97d40620b0b02e",
       "qualifiedPrivateSha256": "ebaece8839c8a8ede27b6afe11f5e7badca155971588bcb99b97d40620b0b02e"
+    },
+    {
+      "path": "app/DeliveryIdentity/FutureDeliveryRequest.php",
+      "sha256": "091db894118b31d2ad352aa6be906d852d3ccf3435edfec328eecbf1b703108e",
+      "qualifiedPrivateSha256": "091db894118b31d2ad352aa6be906d852d3ccf3435edfec328eecbf1b703108e"
+    },
+    {
+      "path": "app/DeliveryIdentity/PartnerAccounts.php",
+      "sha256": "84207ca9e4e153d34ed3835ae45b3123c42d58f9323640cfb132aa8aebb13a74",
+      "qualifiedPrivateSha256": "84207ca9e4e153d34ed3835ae45b3123c42d58f9323640cfb132aa8aebb13a74"
+    },
+    {
+      "path": "app/DeliveryIdentity/PartnerIdentityProvider.php",
+      "sha256": "b703feb31a6649a77311d7a7e09afddb6da7b645d3e789659a11d7da0177ee67",
+      "qualifiedPrivateSha256": "b703feb31a6649a77311d7a7e09afddb6da7b645d3e789659a11d7da0177ee67"
     },
     {
       "path": "app/Domain/Cart.php",
@@ -775,8 +790,8 @@
     },
     {
       "path": "bin/cloud-seed.php",
-      "sha256": "03ab4d68eb7898470f7a96fad8987715763289e1ff9d55ab31f5ed98c7d90b0b",
-      "qualifiedPrivateSha256": "b21a74e1cba9df2aaa2bb8ba125564f068a8e4f0c1e3309b596f777c6c88b771"
+      "sha256": "b087fb10be22e43dae9da270b0b22bf45e17f40939337c39bae53dff34c993cd",
+      "qualifiedPrivateSha256": "6737e7d7c26bc4396fa92bcc7e6b7d73aa285d3ec7bddb56e4120fbb70bdef24"
     },
     {
       "path": "bin/hostinger-preflight.php",
@@ -1049,18 +1064,23 @@
       "qualifiedPrivateSha256": "8415e26cbcd16a21f754327bb3cb92e68ec759c8cdc09b407864aad249600f59"
     },
     {
+      "path": "database/migrations/038_delivery_partner_identity.sql",
+      "sha256": "ffc536aeec8f7695764a9eb92e3a8e705ae9d13745ad5ab2f3aaf046b0b312b3",
+      "qualifiedPrivateSha256": "ffc536aeec8f7695764a9eb92e3a8e705ae9d13745ad5ab2f3aaf046b0b312b3"
+    },
+    {
       "path": "docs/ARCHITECTURE.md",
       "sha256": "f31293860a288c656769f5fa192a83a151e32dd91d2d5eb5272b687737212b05",
       "qualifiedPrivateSha256": "ff6018ffdb8f3df25583f9e8f144042529dcc9bc220acc3a28df959ee7846212"
     },
     {
       "path": "docs/DEVELOPER_SETUP.md",
-      "sha256": "ec45b0a13eb8216d9f9185505aec3f72a712478f9af6d8cf3f5a11cddad3c58f",
+      "sha256": "8ea1b2ff6bb7603e9194af8db013195d22d4630899a772c991560ab95cfdcd0a",
       "qualifiedPrivateSha256": null
     },
     {
       "path": "docs/EXPORT_PROVENANCE.md",
-      "sha256": "94b665dd6debafdb6522226e9e082ccc932e49effe73e0f891acbf948b6c884c",
+      "sha256": "9cfa41b224b27c3ba90512d575da9c2a48004781897a72edb6a095b9483967d1",
       "qualifiedPrivateSha256": null
     },
     {
@@ -1129,13 +1149,38 @@
       "qualifiedPrivateSha256": "d067938d222442de7cd01adc34f2ae7d4dcf88cdb8f25d5cb25359d0669976ef"
     },
     {
+      "path": "docs/M07E_DELIVERY_ARCHITECTURE.md",
+      "sha256": "c54fbfd663dbff1261a6c0bee185c73198bccd744cb2badd1cfb3b3013e5878c",
+      "qualifiedPrivateSha256": "c54fbfd663dbff1261a6c0bee185c73198bccd744cb2badd1cfb3b3013e5878c"
+    },
+    {
+      "path": "docs/M07E_DELIVERY_SECURITY_PRIVACY.md",
+      "sha256": "c9d3e37682910a308d6ee01144e4452038f7bbfa7b9cf60a3180138087f56a68",
+      "qualifiedPrivateSha256": "c9d3e37682910a308d6ee01144e4452038f7bbfa7b9cf60a3180138087f56a68"
+    },
+    {
+      "path": "docs/M07E_DISPATCH_INTEGRATION_BOUNDARY.md",
+      "sha256": "5b4d26b34b616cb65343091ea88dfac6d209b1b075baa7023c79fc1d8139dcca",
+      "qualifiedPrivateSha256": "5b4d26b34b616cb65343091ea88dfac6d209b1b075baa7023c79fc1d8139dcca"
+    },
+    {
+      "path": "docs/M07E_INTERNAL_DELIVERY_CONTRACT.md",
+      "sha256": "541e307e5a0eeb1c32ede0b05375e0100dcbf8dd1d406d1d563c1f87a79f53c4",
+      "qualifiedPrivateSha256": "541e307e5a0eeb1c32ede0b05375e0100dcbf8dd1d406d1d563c1f87a79f53c4"
+    },
+    {
+      "path": "docs/M07E_PARTNER_STATE_CONTRACT.md",
+      "sha256": "c48abd7709c2bab603811cd85bae024bafb22fa8bbe451a4c8c4463580e5dc11",
+      "qualifiedPrivateSha256": "c48abd7709c2bab603811cd85bae024bafb22fa8bbe451a4c8c4463580e5dc11"
+    },
+    {
       "path": "docs/PUBLIC_EXPORT_VALIDATION.md",
-      "sha256": "afdfcb19b28922b45ac1f75de58a5ca86924254e8574dc3ad883f04c2c5a17c9",
+      "sha256": "ebc95ecbd0504ec5dc787458cb8ebe919603621828ca4d55d58fd9b9e53d11fe",
       "qualifiedPrivateSha256": null
     },
     {
       "path": "docs/SECURITY_SCAN.md",
-      "sha256": "da908c734981fa65e805abf2f44e33b7626da24bfd70620cd901813fe88aa35f",
+      "sha256": "6a6855de3285e0ff9c890b73b975361d75072f93548aa20308a00908cca515a4",
       "qualifiedPrivateSha256": null
     },
     {
@@ -1550,7 +1595,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "1b0786edabdfbc8b6f8141f51fd3d8ce8aa09d78c9c41526274ff0b14f3652bd",
+      "sha256": "4c75b49016ff5f683375874e8da0ecaf0b47904cc7b9c6f697b077a39bcdead1",
       "qualifiedPrivateSha256": "2ce75ca9f1d73122a0653714bcd9b9f8b2805049cd875e0d386308ff56c78ce9"
     },
     {
@@ -2001,7 +2046,7 @@
     {
       "path": "tests/tools/m07a-api.php",
       "sha256": "a9a289c2bf50c059af5b3ad7fe055a70c929f6db3f8945a412c68c6c246ea4c1",
-      "qualifiedPrivateSha256": "a9a289c2bf50c059af5b3ad7fe055a70c929f6db3f8945a412c68c6c246ea4c1"
+      "qualifiedPrivateSha256": "a72e7810615a42b21f731df53ae349a175d291fe45e1d67fcecf2c418775caf4"
     },
     {
       "path": "tests/tools/m07a-browser.js",
@@ -2039,6 +2084,16 @@
       "qualifiedPrivateSha256": "f4a5c81dafc2a1bcfceaeb765f793eb392902b4a295a2abbe55f446d145756c3"
     },
     {
+      "path": "tests/tools/m07e-doc-contract.php",
+      "sha256": "53c42f984039db35cbc6eed29b23c80d6cad9f648d448d1e88a648234fe2babf",
+      "qualifiedPrivateSha256": "53c42f984039db35cbc6eed29b23c80d6cad9f648d448d1e88a648234fe2babf"
+    },
+    {
+      "path": "tests/tools/m07e-partners.php",
+      "sha256": "9014a30f86f03c760468829f845ccc0f6b6e659555a2c01fb350d15cd4afd509",
+      "qualifiedPrivateSha256": "9014a30f86f03c760468829f845ccc0f6b6e659555a2c01fb350d15cd4afd509"
+    },
+    {
       "path": "tests/tools/migration-009-timestamps.php",
       "sha256": "2c90b2d4216f93f12537b517d615d877c7dcd0b6555eb60baa4abaa42065ba8c",
       "qualifiedPrivateSha256": "2c90b2d4216f93f12537b517d615d877c7dcd0b6555eb60baa4abaa42065ba8c"
@@ -2046,7 +2101,7 @@
     {
       "path": "tests/tools/migration-sequence.php",
       "sha256": "7a034ae332371ad5e8750fd227f345b5f2fae2eba6e610d4d9f7a9c06b91808a",
-      "qualifiedPrivateSha256": "7a034ae332371ad5e8750fd227f345b5f2fae2eba6e610d4d9f7a9c06b91808a"
+      "qualifiedPrivateSha256": "32c85deccc8e83a935f93b3a932e0a48622a2f49382bc0b048bdeb9d3a47f50f"
     },
     {
       "path": "tests/VoiceCatalogueTest.php",

@@ -12,7 +12,7 @@ try {
  $db->exec("SET time_zone='+00:00'");
  if($db->query("SELECT COUNT(*) FROM information_schema.TABLES WHERE TABLE_SCHEMA=DATABASE()")->fetchColumn()!=0)throw new RuntimeException('Fresh empty demo database required');
  $applied=(new MigrationRunner($db))->apply(dirname(__DIR__).'/database/migrations');
- if(count($applied)!==37)throw new RuntimeException('Expected all 37 migrations');
+ if(count($applied)!==38)throw new RuntimeException('Expected all 38 migrations');
  $id=Identity::generate();$account=bin2hex(random_bytes(16));$now=time();
  $db->exec("INSERT INTO outlets(outlet_code,name,active) VALUES('private-platform','Synthetic platform access',1)");
  $platformOutlet=(int)$db->lastInsertId();
