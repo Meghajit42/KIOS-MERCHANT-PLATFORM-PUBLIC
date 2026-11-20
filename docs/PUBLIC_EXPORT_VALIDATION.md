@@ -1,13 +1,12 @@
-# Public export validation
+# M07E public export validation
 
-On 20 November 2026 the altered public-export candidate completed targeted execution in hardened Windows Sandbox: networking/clipboard/vGPU/device redirection disabled, Protected Client enabled, source/control/runtime read-only, isolated results writable, no original repository or credentials mapped. Actual guest marker and source/dependency hash checks passed.
+The exact M07E executable public-export candidate completed targeted hardened Windows Sandbox qualification on 20 November 2026. Networking, clipboard, vGPU and device redirection were disabled; Protected Client was enabled; source/control/trusted-runtime inputs were read-only and only results were writable. Guest execution, source hashes and dependency hashes were verified.
 
-- 19 synthetic catalogue/image checks: PASS (generation, 105 unique IDs, 13 categories, independent price formula, lookup/category isolation, serving shape, integer totals, generic image rendering, default-off flag, invalid serving rejection).
-- M07D documentation/source contract: 13/13 PASS.
-- PHP syntax: 269/269 PASS.
-- JavaScript syntax: 41/41 PASS.
-- Exit 0, stage public_export_checks_finished.
+- Existing independent synthetic catalogue fixtures: 19 checks passed.
+- Existing M07D documentation contract: 13 checks passed.
+- M07E source-aware documentation contract: 15 checks passed.
+- PHP syntax: 274 files passed.
+- JavaScript syntax: 41 files passed.
+- Guest exit code: 0.
 
-The exact changed executable files matched the guest input hashes before publication. Publication-only validation/security documentation and manifests were then finalized and scanned; they do not change executable behavior. No hosted tests, database migration execution, browser workflow, or full operational regression of this altered public fixture topology is claimed. The separate full qualified private M07D candidate passed its own comprehensive suite and recovery; those historical results do not substitute for public-export tests.
-
-The new Git history contains only the sanitized public source. The old repository's commits, tags and branches remain in its private archive. No automatic deployment or Actions workflow is configured. Future full public-export qualification requires separately authorized adaptation of the missing historical fixtures and runners; do not suppress failures.
+The public catalogue/image adapters remain byte-identical to the approved M07D sanitized baseline. No executable fixture was changed. Final publication manifests and this validation narrative were added afterward and scanned separately. This is targeted public-export qualification, not complete operational, migration, recovery or browser qualification of the sanitized topology. The separate private engineering candidate passed 236 PHP tests, 396 groups/43 suites including 33 partner groups and 97-table recovery; those private results do not qualify omitted public fixtures or new public delivery functionality. No public delivery workflow is implemented.

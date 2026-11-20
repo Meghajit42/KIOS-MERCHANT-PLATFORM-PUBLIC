@@ -1,4 +1,4 @@
-# KIOS Merchant Platform — M07D public source export
+# KIOS Merchant Platform — M07E public source export
 
 Public repository: https://github.com/Meghajit42/KIOS-MERCHANT-PLATFORM-PUBLIC
 
@@ -6,7 +6,7 @@ KIOS is a development-only multi-merchant restaurant platform. This is a sanitiz
 
 ## Architecture and modules
 
-PHP services enforce server-owned merchant/outlet identity, RBAC, optimistic revisions, idempotency and transactional audit records. MariaDB migrations 001–037 describe the database. Native operational services remain separate from synthetic customer-order intents.
+PHP services enforce server-owned merchant/outlet identity, RBAC, optimistic revisions, idempotency and transactional audit records. MariaDB migrations 001–038 describe the database. Native operational services remain separate from synthetic customer-order intents and the internal delivery identity foundation.
 
 - Merchant onboarding, outlet management, staff and centralized platform administration.
 - Menu, serving prices, availability, kitchen configuration and outlet branding.
@@ -38,6 +38,12 @@ Inside the approved hardened guest run `php tests/public-export.php` for catalog
 
 ## Restrictions, licensing and collaboration
 
-Public registration, customer authentication, ordering, real payments, commercial subscription charging, physical printing and delivery dispatch remain disabled. The hosted implementation is a private synthetic demonstration. No deployment workflow or GitHub Actions is enabled. Future work uses reviewed feature branches and pull requests in this new repository; the original repository is a preserved private historical archive. M07E is not authorized.
+Public registration, customer authentication, ordering, real payments, commercial subscription charging, physical printing and delivery dispatch remain disabled. The hosted implementation is a private synthetic demonstration. No deployment workflow or GitHub Actions is enabled. Future work uses reviewed feature branches and pull requests in this new repository; the original repository is a preserved private historical archive. M07F is not authorized.
 
 No open-source license has been granted and no LICENSE file is added. Public visibility alone does not grant a broad license to use, redistribute or sublicense the source. Review GitHub's platform terms and obtain owner permission for uses requiring additional rights. No rights are claimed over omitted shop media or third-party material.
+
+## M07E internal delivery foundation
+
+Stable synthetic partner UUIDs, platform lifecycle/eligibility controls, owned profile/configuration/availability, revision locks and immutable audit events are implemented in internal PHP services. Identity defaults off. No public partner/customer authentication, request persistence, dispatch, assignment, GPS, delivery payment or operational delivery is implemented.
+
+See [delivery architecture](docs/M07E_DELIVERY_ARCHITECTURE.md), [state contract](docs/M07E_PARTNER_STATE_CONTRACT.md), [internal service contract](docs/M07E_INTERNAL_DELIVERY_CONTRACT.md), [dispatch boundary](docs/M07E_DISPATCH_INTEGRATION_BOUNDARY.md), and [security/privacy](docs/M07E_DELIVERY_SECURITY_PRIVACY.md). In the approved hardened guest run `php tests/tools/m07e-doc-contract.php .`. Migration 038 is additive; use a disposable database only. `tests/tools/m07e-partners.php` requires the private engineering runner and generated fixture inputs; its presence does not imply standalone public fixture qualification.
