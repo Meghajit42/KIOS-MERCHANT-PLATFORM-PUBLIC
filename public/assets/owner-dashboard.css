@@ -1,0 +1,47 @@
+/* Owner pages only. Business actions and form handling remain in their existing pages. */
+:root{--ink:#391b18;--muted:#705d55;--line:#e4d5bf;--paper:#fff9ed;--navy:#780909;--red:#a30c16;--shadow:0 8px 24px rgba(87,23,16,.08)}
+.admin-topbar{background:#780909;gap:14px;flex-wrap:wrap;padding:12px max(20px,calc((100vw - 1240px)/2))}
+.owner-logo{width:54px;height:48px;object-fit:contain;flex:none}
+.admin-brand strong{white-space:normal;line-height:1.2}
+.admin-brand small{color:#ffe2a0}
+.admin-topbar nav{order:3;flex-basis:100%;justify-content:flex-start;gap:6px}
+.admin-topbar nav a,.admin-logout{min-height:44px;display:inline-flex;align-items:center;border:1px solid transparent}
+.admin-topbar nav a:hover,.admin-topbar nav a:focus-visible,.admin-logout:hover{background:#fff2d0;color:#700808}
+.admin-topbar form{margin-left:auto}
+.admin-shell{margin-top:26px}
+.admin-card-grid{gap:14px}
+.admin-card{min-height:155px;padding:20px;border-top:4px solid #e3b33b}
+.admin-card h2{font-size:20px}
+.admin-card p{margin-bottom:12px}
+.admin-panel,.admin-card{overflow-wrap:anywhere}
+.admin-button{min-height:48px}
+.admin-button:not(.admin-button-secondary):not(.admin-button-hide):not(.admin-button-danger){background:#8b0b12;color:#fff}
+.admin-button-primary{background:#8b0b12;color:#fff}
+.admin-button-primary:hover{background:#65070d}
+.admin-button-secondary{border-color:#a88c76}
+.admin-button:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #dc9b00;outline-offset:2px}
+.admin-flash{background:#fff1c9;border-color:#d49b22;color:#543509}
+.admin-login-body{background:#fff4de}
+.admin-login-card{border-top:6px solid #9b111b}
+.admin-login-card .admin-brand small{color:#705d55}
+.admin-shell table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse}
+.admin-shell th,.admin-shell td{padding:10px 12px;text-align:left;border-bottom:1px solid #e4d5bf}
+.admin-shell input:not([type=checkbox]):not([type=radio]),.admin-shell select,.admin-shell textarea{max-width:100%;min-height:48px;font:inherit}
+.admin-shell label{overflow-wrap:anywhere}
+.admin-form label:has(input[type=checkbox]){flex-direction:row;align-items:center;gap:10px}
+.admin-form input[type=checkbox]{width:24px;min-height:24px;height:24px;flex:none}
+.owner-shop-state{border-left:7px solid #a30c16}
+.owner-shop-open{border-left-color:#227044}
+.owner-shop-state h2{display:inline-block;margin:0;padding:7px 14px;border-radius:8px;background:#fce1de;color:#7c0c12}
+.owner-shop-open h2{background:#dcf1df;color:#175a32}
+.ops-actions button[value=open]{background:#205d3c!important;color:#fff}
+.ops-actions button[value=close]{background:#fff4f1!important;color:#820c15!important;border-color:#b66e70}
+.owner-end-day{margin-top:18px;padding:18px;border:1px solid #d9a6a1;border-radius:12px;background:#fff4f1}
+.owner-review .admin-panel{padding:20px;margin:14px 0}
+.owner-review form{display:flex;align-items:end;flex-wrap:wrap;gap:12px}
+.owner-review label{display:grid;gap:6px;font-weight:700;flex:1 1 220px}
+.owner-review select,.owner-review textarea{width:100%;padding:10px;border:1px solid #b69e8b;border-radius:8px;background:#fff;color:var(--ink)}
+.owner-review textarea{min-height:100px}
+.owner-review .admin-panel h2{margin-top:0}
+@media(max-width:900px){.admin-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-topbar nav{overflow-wrap:anywhere}.admin-shell{width:calc(100% - 32px)}}
+@media(max-width:560px){.admin-card-grid{grid-template-columns:1fr}.admin-topbar{padding:12px}.admin-topbar nav a{font-size:14px}.admin-brand strong{font-size:15px}.admin-shell{width:calc(100% - 24px)}}

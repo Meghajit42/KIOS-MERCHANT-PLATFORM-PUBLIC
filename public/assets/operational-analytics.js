@@ -1,0 +1,2 @@
+'use strict';
+document.addEventListener('DOMContentLoaded',()=>{const main=document.querySelector('[data-analytics]');if(!main)return;main.querySelector('[data-analytics-filter]').addEventListener('submit',()=>{main.querySelector('[data-analytics-loading]').textContent='Loading authorized read-only snapshot…';});const search=main.querySelector('[data-analytics-search]');search.addEventListener('input',()=>{for(const row of main.querySelectorAll('#staff tbody tr'))row.hidden=!row.textContent.toLowerCase().includes(search.value.toLowerCase());});});

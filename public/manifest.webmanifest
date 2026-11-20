@@ -1,0 +1,18 @@
+{
+  "name": "Synthetic Restaurant Demo — Demo",
+  "short_name": "Kios Demo",
+  "description": "A Kios demo using owner-supplied Gopal menu content and synthetic orders; menu prices are not independently verified.",
+  "start_url": "/?view=welcome",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFF8E7",
+  "theme_color": "#BA0107",
+  "icons": [
+    {
+      "src": "/assets/brand/gmb-favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

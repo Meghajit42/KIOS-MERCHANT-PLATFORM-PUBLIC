@@ -1,0 +1,2 @@
+# Preserve verified export bytes, including existing mixed line endings.
+* -text

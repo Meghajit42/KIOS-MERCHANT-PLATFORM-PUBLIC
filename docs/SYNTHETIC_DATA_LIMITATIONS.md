@@ -1,0 +1,7 @@
+# Synthetic data and omissions
+
+The public adapter generates numbered categories and 105 independently numbered products, one portion variant each, with price in paise `1237 + item_index * 137`. Category 1 has nine items and the remaining twelve have eight. Approved enum station codes are assigned round-robin purely for fixture coverage; this is not a real merchant routing approval. The included generic SVG is used instead of food photography.
+
+No legacy product names, menu price records, product-bearing photo mappings or old Git history are included. Historical media-dependent tests and scripts that assert old menu entries/SKUs are omitted. Their paths are recorded in EXCLUSIONS.json. Other retained historical tests may require missing fixtures or updated category/ID assumptions. This is disclosed, not a passing full-suite claim.
+
+The public fixture adapter preserves callable method interfaces but changes fixture behavior. Targeted hardened-guest validation covers catalogue generation, lookups, category isolation, serving/pricing invariants, generic image rendering and invalid-domain inputs. Full database, browser and operational regression of this changed public fixture topology has not been performed. Existing M07D security logic is byte-identical to the qualified private candidate; its historical isolated qualification is separate evidence. No hosted implementation or operational record was modified for this publication.

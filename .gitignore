@@ -1,0 +1,33 @@
+# Secrets, runtime records and private deployment material
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.dpapi
+*.sql.gz
+*.sql.zip
+*.dump
+*.log
+*.zip
+*.tar*
+/storage/**
+/vendor/
+/node_modules/
+/qualification/
+/backups/
+/hosted/
+/.git-credentials
+/.ssh/
+/.control-plane/
+/public/assets/menu-managed/**
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Permit schema definitions, never database exports
+*.sql
+!/database/migrations/*.sql

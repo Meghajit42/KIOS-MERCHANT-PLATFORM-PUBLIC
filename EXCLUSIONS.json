@@ -1,0 +1,40 @@
+{
+  "scope": "Sanitized public export",
+  "inheritedOmittedPaths": 1221,
+  "additionalOmittedFiles": [
+    "EXCLUSIONS.json",
+    "EXPORT_MANIFEST.json",
+    "bin/accept-k5-local.php",
+    "bin/k7-local-qualification.php",
+    "tests/AvailabilityTest.php",
+    "tests/DatabaseConnectionTest.php",
+    "tests/GopalMenuImagesTest.php",
+    "tests/GopalMenuTest.php",
+    "tests/K9CartStepTest.php",
+    "tests/K9ImageTest.php",
+    "tests/MenuAdminTest.php",
+    "tests/OrderingDomainTest.php",
+    "tests/PersistenceTest.php",
+    "tests/PickupTokenTest.php",
+    "tests/PreparationGroupingTest.php",
+    "tests/PreparationWorkflowTest.php",
+    "tests/PrintingTest.php",
+    "tests/StationTimeTest.php",
+    "tests/c1b-mariadb.php",
+    "tests/tools/export-c1-fixtures.php",
+    "tests/tools/generate-k8b-print-fixtures.php",
+    "tests/tools/k9-cart-http.php",
+    "tests/tools/m03a-browser.js",
+    "tests/tools/m05c-engine.php",
+    "tests/tools/m06d-browser.js",
+    "tests/tools/m06d-usage.php",
+    "tests/tools/m07b-api.php"
+  ],
+  "omissionCategories": [
+    "Legacy merchant catalogue and image datasets",
+    "Shop media and unverified third-party assets",
+    "Private configuration, credentials, sessions, operational logs, database dumps and backups",
+    "Historical acceptance scripts and fixture-dependent assertions containing legacy menu records"
+  ],
+  "privateInventory": "Full historical omission inventory is retained outside this public repository; product-bearing filenames are deliberately not reproduced here."
+}
